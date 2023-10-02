@@ -7,7 +7,7 @@ def load_homicide_data(fp):
     print("Loading data...")
 
     df = pd.read_csv(fp, encoding="ISO-8859-1")
-    df = df.drop(columns=["uid", "lat", "lon"])
+    df = df.drop(columns=["uid", "victim_last", "victim_first", "lat", "lon"])
 
     df["reported_date"] = pd.to_datetime(
         df["reported_date"].astype(str), format="%Y%m%d", errors="coerce"
