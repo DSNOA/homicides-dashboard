@@ -118,5 +118,5 @@ def load_homicide_data(fp):
         print(e)
 
 
-fp = "../data/homicide.csv"
+fp = "data/homicides.csv"
 df = load_homicide_data(fp)
