@@ -11,7 +11,7 @@ st.title("Unsolved Murders in 55 Cities Over The Past Decade")
 
 @st.cache_data
 def load_data(nrows):
-    data = pd.read_csv("../data/homicide.csv", nrows=nrows)
+    data = pd.read_csv("data/homicides.csv", nrows=nrows)
 
     def lowercase(x):
         return str(x).lower()
